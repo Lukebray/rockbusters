@@ -4,7 +4,8 @@
   "description": "An API for Rockbusters from the XFM Ricky Gervais Show",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server"
+    "start": "nodemon server",
+    "test": "node server.js"
   },
   "repository": {
     "type": "git",
