@@ -11,6 +11,10 @@ const rockbustersRoutes = require('./routes/rockbusters');
 // BodyParser Middleware
 app.use(express.json());
 
+app.get('/', (req, res) => {
+    res.send('Home page here!');
+})
+
 // Connect to MongoDB
 mongoose.connect(process.env.DB_CONNECTION, {
     useNewUrlParser: true,
