@@ -12,7 +12,7 @@ const rockbustersRoutes = require('./routes/rockbusters');
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send('Home page here!');
+    res.send('blah');
 })
 
 // Connect to MongoDB
