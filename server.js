@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const path = require('path');
 
 require('dotenv/config');
 
@@ -12,7 +13,7 @@ const rockbustersRoutes = require('./routes/rockbusters');
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send('blah');
+    res.sendFile(path.join(__dirname+'/pages/index.html'));
 })
 
 // Connect to MongoDB
