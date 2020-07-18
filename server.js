@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 })
 
 // Connect to MongoDB
-mongoose.connect("mongodb://luke:mkQxJXm83CuhUkay@cluster0-shard-00-00.lbs3u.mongodb.net:27017,cluster0-shard-00-01.lbs3u.mongodb.net:27017,cluster0-shard-00-02.lbs3u.mongodb.net:27017/rockbusters?ssl=true&replicaSet=atlas-w9nu7p-shard-0&authSource=admin&retryWrites=true&w=majority", {
+mongoose.connect(process.env.DB_CONNECTION, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false
