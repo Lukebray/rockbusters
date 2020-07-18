@@ -3,11 +3,11 @@
 My first API which is based on Karl Pilkington's famous quiz "Rockbusters" (sounds a little bit like Blockbusters).
 
 ### Current Routes
-* /rockbusters will get all rockbusters in the database (more to be added)
+* `/rockbusters` will get all rockbusters in the database (more to be added)
 
-* /rockbusters/ID will get the rockbuster you specify
+* `/rockbusters/ID` will get the rockbuster you specify
 
-* /rockbusters/add will allow you to post your own rockbuster 
+* `/rockbusters/add` will allow you to post your own rockbuster 
 
 example post body would be: 
 `{
