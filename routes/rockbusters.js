@@ -16,6 +16,23 @@ router.get('/', async (req, res) => {
     }
 });
 
+// @routes GET /rockbusters/random
+// @description GET a random rockbuster
+router.get('/random', async (req, res) => {
+    try {
+        Rockbusters.findRandom({},{},{limit:1}, (err, result) => {
+            if(!err) {
+                res.status(200).json(result);
+            } else {
+                throw Error('No items found.');
+            }
+        })
+    } catch(error) {
+        res.status(400).json({ msg:error });
+    }
+    
+});
+
 // @routes GET /rockbusters/:id
 // @description GET a rockbusters by id
 router.get('/:id', async (req, res) => {

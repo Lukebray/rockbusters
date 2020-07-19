@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+var random = require('mongoose-simple-random');
 
 const RockbusterSchema = new Schema({
     clue: {
@@ -31,5 +32,6 @@ const RockbusterSchema = new Schema({
         default: Date.now,
     },
 });
+RockbusterSchema.plugin(random);
 
 module.exports = mongoose.model('Rockbuster', RockbusterSchema);
