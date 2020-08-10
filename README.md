@@ -1,6 +1,7 @@
 # Rockbusters API
 
-My first API which is based on Karl Pilkington's famous quiz "Rockbusters" (sounds a little bit like Blockbusters).
+
+An API which is based on Karl Pilkington's famous quiz "Rockbusters" (sounds a little bit like Blockbusters).
 
 ### Current Routes
 * `/rockbusters` will get all rockbusters in the database (more to be added)
